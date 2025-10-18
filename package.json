@@ -1,0 +1,32 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "game",
+    "blog",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/d4ngv0-vn/Game-Blog#readme",
+  "bugs": {
+    "url": "https://github.com/d4ngv0-vn/Game-Blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d4ngv0-vn/Game-Blog.git"
+  },
+  "license": "ISC",
+  "author": "d4ngv0-vn",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
