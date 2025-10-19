@@ -18,15 +18,19 @@
   "license": "ISC",
   "author": "d4ngv0-vn",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js"
+    "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "sass": "^1.93.2"
   }
 }
