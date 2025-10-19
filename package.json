@@ -36,7 +36,8 @@
   "dependencies": {
     "express": "^5.1.0",
     "express-handlebars": "^8.0.1",
-    "http-status-code": "^2.1.0"
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.19.1"
   },
   "devDependencies": {
     "husky": "^9.1.7",

@@ -2,9 +2,17 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars');
+
 const route = require('./routes/index');
+const db = require('./config/db/index');
+
+//connect to db
+db.connect();
+
 const app = express();
 const port = 3000;
+
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 

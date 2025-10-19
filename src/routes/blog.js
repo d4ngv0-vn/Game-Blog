@@ -3,7 +3,7 @@ const router = express.Router();
 
 const blogController = require('../app/controllers/BlogController');
 
-router.use('/:slug', blogController.show);
-router.use('/', blogController.index);
+router.get('/:id', blogController.getBlog);
+router.get('/', blogController.index);
 
 module.exports = router;
