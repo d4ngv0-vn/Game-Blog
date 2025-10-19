@@ -1,11 +1,8 @@
-
 class SiteController {
-    // [GET] render /home
-    home(req, res) {
-        res.render('blog')
-    }
-    
-
+  // [GET] render /home
+  home(req, res) {
+    res.render('blog');
+  }
 }
 
-module.exports = new SiteController;
+module.exports = new SiteController();

@@ -6,20 +6,22 @@ const route = require('./routes/index');
 const app = express();
 const port = 3000;
 
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 //http logger
 app.use(morgan('combined'));
 
-
 //template engine
-app.engine('hbs', engine({
-  extname: '.hbs'
-}));
-app.set("view engine", 'hbs');
+app.engine(
+  'hbs',
+  engine({
+    extname: '.hbs',
+  }),
+);
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
+//route
 route(app);
 
 app.listen(port, () => {
