@@ -8,7 +8,7 @@ const Blog = new Schema({
     content: { type: String, maxLength: 1000 },
     createdAt: { type: Date, default: Date.now },
     updateAt: { type: Date, default: Date.now },
-    likes: { type: Array }
+    likes: { type: Array },
 });
 
 module.exports = mongoose.model('Blog', Blog);

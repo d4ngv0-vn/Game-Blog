@@ -20,13 +20,13 @@
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
-    "beautify": "prettier --single-quote --trailing-comma all --tab-width 2 --write 'src/**/*.{js,json,scss}'",
+    "beautify": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js,json,scss}'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
     "start": "nodemon src/index.js"
   },
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 2 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {

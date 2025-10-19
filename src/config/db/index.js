@@ -5,7 +5,7 @@ async function connect() {
         await mongoose.connect('mongodb://localhost:27017/dandelion_game_blog');
 
         console.log('Database connect successfully');
-    } catch(err) {
+    } catch (err) {
         console.log('Database error!', err);
     }
 }
